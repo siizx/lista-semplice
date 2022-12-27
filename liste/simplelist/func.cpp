@@ -44,5 +44,5 @@ void print_lista(lista &l)
         cout << p->name << " " << p->age << endl;
         p = p->next;
 
-    } while (p->next != nullptr)
+    } while (p->next != nullptr);
 };
