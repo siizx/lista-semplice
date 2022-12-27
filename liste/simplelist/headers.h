@@ -4,9 +4,22 @@
 #include <iostream>
 #include <string>
 
- using namespace std;
+using namespace std;
 
+struct cell
+{
+    int age;
+    string name;
+    cell *next = nullptr;
+};
 
+typedef cell *lista;
 
+// FUNZIONI
 
- // FUNZIONI
+void init_lista();
+void add();
+void add_one();
+void print_lista();
+
+#endif
