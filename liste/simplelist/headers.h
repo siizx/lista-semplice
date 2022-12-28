@@ -8,23 +8,18 @@ using namespace std;
 
 struct cell
 {
-    int age;
+    int age = -1;
     string name;
     cell *next = nullptr;
 };
 
-cell head;
-head.age = 0;
-head.name = "head";
-head.next = nullptr;
-
 typedef cell *lista;
 
 // FUNZIONI
-
-void init_lista(lista &);
+void read_cell(lista &l);
+// void init_lista(lista &);
 void add_n(lista &);
-void add_one(lista &);
+// void add_one(lista &);
 void print_lista(lista &);
 
 #endif
