@@ -9,10 +9,17 @@
 //     l->next = nullptr;
 // };
 
-// void add_one(lista &l)
-// {
-
-// };
+void add_one(lista &l)
+{
+    lista aux = l;
+    while (aux->next != nullptr)
+    {
+        aux = aux->next;
+    }
+    aux->next = new cell;
+    aux = aux->next;
+    read_cell(aux);
+};
 
 void read_cell(lista &l)
 {
@@ -26,39 +33,23 @@ void read_cell(lista &l)
 
 void add_n(lista &l)
 {
-    lista aux = l;
-
     unsigned int n;
     cout << "Quante celle vuoi aggiungere? ";
     cin >> n;
     cout << endl;
+
     for (int i = 0; i < n; i++)
     {
-        if (aux->age != -1)
-        {
-            read_cell(aux);
-        }
-        else
-        {
-            while (aux->next != nullptr)
-            {
-                aux = aux->next;
-            }
-            aux->next = new cell;
-            aux = aux->next;
-            read_cell(aux);
-        }
-        aux = aux->next;
+        add_one(l);
     }
 };
 
 void print_lista(lista &l)
 {
-    lista p = l;
-    do
+    lista p = l->next;
+    while (p != nullptr)
     {
         cout << p->name << " " << p->age << endl;
         p = p->next;
-
-    } while (p->next != nullptr);
+    }
 };

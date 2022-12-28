@@ -16,10 +16,10 @@ struct cell
 typedef cell *lista;
 
 // FUNZIONI
-void read_cell(lista &l);
+void read_cell(lista &);
 // void init_lista(lista &);
 void add_n(lista &);
-// void add_one(lista &);
+void add_one(lista &);
 void print_lista(lista &);
 
 #endif
