@@ -2,7 +2,7 @@
 
 // IMPLEMENTAZIONE DELLE FUNZIONI
 
-void init_lista(lista l)
+void init_lista(lista &l)
 {
     l = new cell;
     l->age = -1;
@@ -28,8 +28,12 @@ void add_one(lista &l)
     }
 };
 
-void add_n(lista &l, unsigned int n)
+void add_n(lista &l)
 {
+    unsigned int n;
+    cout << "Quante celle vuoi aggiungere? ";
+    cin >> n;
+    cout << endl;
     for (int i = 0; i < n; i++)
     {
         add_one(l);

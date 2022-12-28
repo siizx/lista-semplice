@@ -13,13 +13,18 @@ struct cell
     cell *next = nullptr;
 };
 
+cell head;
+head.age = 0;
+head.name = "head";
+head.next = nullptr;
+
 typedef cell *lista;
 
 // FUNZIONI
 
-void init_lista();
-void add();
-void add_one();
-void print_lista();
+void init_lista(lista &);
+void add_n(lista &);
+void add_one(lista &);
+void print_lista(lista &);
 
 #endif
