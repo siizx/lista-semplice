@@ -1,7 +1,9 @@
 #include "headers.h"
 
 // IMPLEMENTAZIONE DELLE FUNZIONI
+void pop_one(lista &l){
 
+};
 
 void add_one(lista &l)
 {
