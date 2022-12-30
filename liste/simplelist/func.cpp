@@ -2,12 +2,6 @@
 
 // IMPLEMENTAZIONE DELLE FUNZIONI
 
-// void init_lista(lista &l)
-// {
-//     l = new cell;
-//     l->age = -1;
-//     l->next = nullptr;
-// };
 
 void add_one(lista &l)
 {
