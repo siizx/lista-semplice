@@ -20,6 +20,6 @@ void read_cell(lista &);
 void add_n(lista &);
 void add_one(lista &);
 void print_lista(lista &);
-void pop_one(lista &);
+void pop_last(lista &);
 
 #endif

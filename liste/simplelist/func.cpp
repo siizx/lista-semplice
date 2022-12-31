@@ -1,8 +1,14 @@
 #include "headers.h"
 
 // IMPLEMENTAZIONE DELLE FUNZIONI
-void pop_one(lista &l){
-
+void pop_last(lista &l)
+{
+    lista aux = l;
+    while (l->next != nullptr)
+    {
+        aux = aux->next;
+    }
+    // ORA DEVO SCRIVERE AUX (IMPLEMENTARE FUNZIONE) E POI CANCELLARLO.
 };
 
 void add_one(lista &l)
