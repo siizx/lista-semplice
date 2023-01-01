@@ -25,7 +25,8 @@ void delete_cell(lista &l)
 
 void write_cell(const lista &q)
 {
-    cout << "Name: " << q->name << "\nAge: " << q->age << endl;
+    cout << "Name: " << q->name << "\nAge: " << q->age << "\n"
+         << endl;
 };
 
 void pop_last(lista &l)
@@ -86,4 +87,35 @@ void print_lista(lista &l)
         write_cell(p);
         p = p->next;
     }
+};
+
+void pop_pos(lista &l)
+{
+
+    unsigned int n;
+    cout << "Quale pos vuoi cancellare? ";
+    cin >> n;
+    cout << endl;
+
+    // creo due puntatori ausiliari:
+    lista aux = l;
+    lista prev = l;
+
+    // Itero n volte aux in l
+    for (int i = 0; i < n; i++)
+    {
+        if (aux->next != nullptr)
+        {
+            prev = aux;
+            aux = aux->next;
+        }
+        else
+        {
+            cout << "Pos out of bound." << endl;
+            break;
+        }
+    }
+    prev->next = aux->next;
+    delete aux;
+    aux = nullptr;
 };

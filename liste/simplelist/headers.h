@@ -27,6 +27,7 @@ void print_lista(lista &);
 void pop_last(lista &);
 void delete_cell(lista &);
 void write_cell(const lista &);
+void pop_pos(lista &);
 //  FSTREAM
 void open_file();
 void open_file();
