@@ -14,9 +14,12 @@ int main()
 	cout << "------------" << endl;
 	print_lista(lis);
 	cout << "------------" << endl;
-	pop_last(lis);
+	// pop_last(lis);
 	cout << "------------" << endl;
 	print_lista(lis);
-
+	cout << "------------\n"
+		 << endl;
+	pop_pos(lis);
+	print_lista(lis);
 	return 0;
 }
