@@ -11,6 +11,11 @@ int main()
 	lista head = lis;
 
 	add_n(lis);
+	cout << "------------" << endl;
+	print_lista(lis);
+	cout << "------------" << endl;
+	pop_last(lis);
+	cout << "------------" << endl;
 	print_lista(lis);
 
 	return 0;
